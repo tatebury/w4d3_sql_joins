@@ -1,0 +1,37 @@
+-- CREATE TABLE customer(
+--     customer_id SERIAL PRIMARY KEY,
+--     first_name VARCHAR(100),
+--     last_name VARCHAR(100),
+--     email VARCHAR(200),
+--     address VARCHAR(150),
+--     city VARCHAR(150),
+--     customer_state VARCHAR(100),
+--     zip_code VARCHAR(50)
+-- );
+
+-- CREATE TABLE "order"(
+--     order_id SERIAL PRIMARY KEY,
+--     order_date DATE DEFAULT CURRENT_DATE,
+--     amount NUMERIC(5,2),
+--     customer_id INTEGER,
+--     FOREIGN KEY(customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE
+-- );
+
+
+-- INSERT INTO customer(first_name, last_name, email, address, city, customer_state, zip_code)
+-- VALUES ('George', 'Washington', 'gwash@usa.gov', '32-- Mt. Vernon Hwy', 'Mt. Vernon', 'VA', '12323'),
+-- ('John', 'Adams', 'jadams@usa.gov', '1200 Hancock Rd', 'Quincy', 'MA', '02174'),
+-- ('Thomas', 'Jefferson', 'tjeff@usa.gov', '555 N Monticelle Drive', 'Monticello', 'VA', '34725'),
+-- ('James', 'Madison', 'maddog@usa.gov', '6362 S Constitution', 'Montpeller', 'VA', '22957'),
+-- ('James', 'Monroe', 'jman@whitehouse.gov', '1600 Pennsylvania Ave', 'Washington', 'DC', '87342');
+
+
+INSERT INTO "order"(amount, customer_id)
+VALUES(234.56, 1),
+(74.34, 3),
+(100.00, 2),
+(42.32, 3),
+(55.55, NULL);
+
+-- INSERT INTO order_(amount, customer_id)
+-- VALUES(10001, 1)

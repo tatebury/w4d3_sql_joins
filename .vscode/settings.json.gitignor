@@ -1,0 +1,22 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "connectString": "postgres://ufdfvrrj:t2WML3gmVFWlVv9MSyo7fbjxnhmqneSE@kashin.db.elephantsql.com/ufdfvrrj",
+            "name": "sql_join_hw"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "connectString": "postgres://strsoggx:Njxe5NbMp8X56qkbnvKSFLgkg8dz7on9@kashin.db.elephantsql.com/strsoggx",
+            "name": "DVD_db"
+        }
+    ]
+}
